@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="50" id="72V-SK-W6C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-vT-6LQ">
                                 <rect key="frame" x="221" y="323" width="83" height="50"/>
@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="width" secondItem="Obi-vT-6LQ" secondAttribute="height" multiplier="83:50" id="GhE-hI-9KU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCk-Qd-YBB">
                                 <rect key="frame" x="16" y="405" width="288" height="55"/>
