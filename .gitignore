@@ -1,14 +1,8 @@
 # Xcode user state files
 appCalculo.xcodeproj/project.xcworkspace/xcuserdata/*
 
-# Xcode workspace settings
-appCalculo.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-
 # Xcode scheme management files
 appCalculo.xcodeproj/xcuserdata/*/xcschemes/xcschememanagement.plist
 
 # Xcode shared data
 appCalculo.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-
-# Xcode project files
-appCalculo.xcodeproj/project.pbxproj
