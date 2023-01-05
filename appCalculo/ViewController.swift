@@ -8,7 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  @IBOutlet weak var lblMount: UILabel!
+  @IBOutlet weak var lblDiscount: UILabel!
+  @IBOutlet weak var txtDiscount: UITextField!
+  @IBOutlet weak var txtMount: UITextField!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -36,7 +41,32 @@ class ViewController: UIViewController {
       self.view.frame.origin.y = 0
     }
   }
-
+  
+  
+  @IBAction func calculatePercentage(_ sender: Any) {
+    guard let mount = txtMount.text else { return }
+    guard let percentage = txtDiscount.text else { return }
+    
+    let cant = (mount as NSString).floatValue
+    let perc = (percentage as NSString).floatValue
+    
+    let discount = cant * perc/100
+    let result = cant - discount
+    
+    lblMount.text = "S/. \(result)"
+    lblDiscount.text = "S/. \(discount)"
+    self.view.endEditing(true)
+  }
+  
+  
+  
+  @IBAction func clearData(_ sender: Any) {
+    lblMount.text = "S/ 0.00"
+    lblDiscount.text = "S/. 0.00"
+    txtMount.text = ""
+    txtDiscount.text = ""
+  }
+  
 
 }
 
